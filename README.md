@@ -4,11 +4,11 @@ Send http request easily
 Coded on phone - 2/18/21
 
 ## Getting started
-Download the SimpleRequest.php and then require it to your project
+Download the SimpleRequest.php and then require it to your project and then it's now ready to use!
 ```php
 $sr = new SimpleRequest();
 ```
-You can pass an array of options to make the default options for your requests
+You can pass an array of options to make the default options for your upcoming request.
 ```php
 $sr = new SimpleRequest([
   "base_url" => "https://api.com",
