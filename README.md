@@ -92,14 +92,13 @@ $res = $sr->get(".auth./v1/pin");
 
 ### Response
 Response array contains:
-```
-Key | Value | Description
-ok  boolean  Returns true if status code is in range between 200 to 299
-raw  string  Raw http response contains header and body
-headers  array  Parsed headers
-raw_header  string  Raw http header
-body  string  Raw http body
-info  array  curl_getinfo result
-code  integer  Http response code
-http  array  Contains http version, code, reason(Code name)
-```
+| Key        | Value   | Description                                                |
+|------------|---------|------------------------------------------------------------|
+| ok         | boolean | Returns true if status code is in range between 200 to 299 |
+| raw        | string  | Raw http response includes header and body                 |
+| headers    | array   | Parsed http header                                         |
+| raw_header | string  | Raw http header response                                   |
+| body       | string  | Raw http body response                                     |
+| info       | array   | Curl_getinfo result                                        |
+| code       | integer | Http response code                                         |
+| http       | array   | Contains http version, code, reason(Code name)             |
