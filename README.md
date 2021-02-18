@@ -11,7 +11,7 @@ $sr = new SimpleRequest();
 You can pass an array of options to make the default options for your upcoming request.
 ```php
 $sr = new SimpleRequest([
-  "base_url" => "https://api.com",
+  "base_url" => "https://example.com",
   "headers" => [
     "Content-type" => "application/json"
   ],
@@ -27,21 +27,21 @@ $sr = new SimpleRequest([
 # This will use the base_url
 $res = $sr->get("/users/3");
 # This will not use the base_url
-$res = $sr->get("https://api.com/users/3");
+$res = $sr->get("https://example.com/users/3");
 ```
 
 #### Perform POST request
 ```php
 $res = $sr->post("/users/3", $data);
 // or
-$res = $sr->post("https://api.com/users/3", $data);
+$res = $sr->post("https://example.com/users/3", $data);
 ```
 
 #### Perform CUSTOM request
 ```php
 $res = $sr->request("PATCH", "/users/3", $data);
 // or
-$res = $sr->request("PATCH", "https://api.com/users/3", $data);
+$res = $sr->request("PATCH", "https://example.com/users/3", $data);
 ```
 
 #### With session
@@ -85,9 +85,9 @@ $sr->opts["curl_opts"] = [
 #### Add subdomain to base_url
 Use dot in the start and the end of the subdomain
 ```php
-// Base url: https://api.com
+// Base url: https://example.com
 $res = $sr->get(".auth./v1/pin");
-// Url now: https://auth.api.com/v1/pin
+// Url now: https://auth.example.com/v1/pin
 ```
 
 ### Response
