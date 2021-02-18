@@ -119,3 +119,6 @@ $sr->session(<method><, url>[, data][, options]);
 ```php
 $sr->clearSession();
 ```
+```php
+$sr->parseHeaders(<header>);
+```
