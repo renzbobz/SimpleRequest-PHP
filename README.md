@@ -122,3 +122,6 @@ $sr->clearSession();
 ```php
 $sr->parseHeaders(<header>);
 ```
+```php
+$sr->parseHttp(<header>);
+```
