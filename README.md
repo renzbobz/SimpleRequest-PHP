@@ -1,8 +1,7 @@
 # SimpleRequest
 Send http request easily
 
-Coded on phone
-2/18/21
+Coded on phone - 2/18/21
 
 ## Getting started
 Download the SimpleRequest.php and then require it to your project
