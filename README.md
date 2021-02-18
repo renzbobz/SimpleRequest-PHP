@@ -102,3 +102,20 @@ Response array contains:
 | info       | array   | Curl_getinfo result                                        |
 | code       | integer | Http response code                                         |
 | http       | array   | Contains http version, code, reason(Code name)             |
+
+### Methods
+```php
+$sr->request(<method><, url>[, data][, options]);
+```
+```php
+$sr->get(<url>[, options]);
+```
+```php
+$sr->post(<url>[, data][, options]);
+```
+```php
+$sr->session(<method><, url>[, data][, options]);
+```
+```php
+$sr->clearSession();
+```
