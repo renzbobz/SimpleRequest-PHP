@@ -103,7 +103,7 @@ class SimpleRequest {
     
     $http = $this->parseHttp($header);
    
-    return [
+    return (object) [
       'ok'          => $isOK, 
       'raw'         => $response,
       'headers'     => $headers,
