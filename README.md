@@ -28,6 +28,7 @@ $sr = new SimpleRequest([
 $res = $sr->get("/users/3");
 # This will not use the base_url
 $res = $sr->get("https://example.com/users/3");
+echo $res->body;
 ```
 
 #### Perform POST request
@@ -91,7 +92,7 @@ $res = $sr->get(".auth./v1/pin");
 ```
 
 ### Response
-Response array contains:
+Response object contains:
 | Key        | Value   | Description                                                |
 |------------|---------|------------------------------------------------------------|
 | ok         | boolean | Returns true if status code is in range between 200 to 299 |
