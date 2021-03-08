@@ -101,7 +101,7 @@ Response object contains:
 | raw_header | string  | Raw http header response                                   |
 | body       | string  | Raw http body response                                     |
 | info       | array   | Curl_getinfo result                                        |
-| code       | integer | Http response code                                         |
+| code       | number  | Http response code                                         |
 | http       | array   | Contains http version, code, reason(Code name)             |
 
 ### Methods
